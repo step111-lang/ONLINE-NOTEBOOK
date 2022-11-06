@@ -54,7 +54,7 @@ for(let i=0;i<pp.length;i++){
           clearTimeout(timer);
       }
       localStorage.setItem('tex',JSON.stringify(inp.value));
-      butto.addEventListener("click", (e) => {
+      function batto(){
          if(inp.value !=""){
          
           e.preventDefault()
@@ -95,5 +95,5 @@ for(let i=0;i<pp.length;i++){
         
         inp.value=""
         
-      });
+      }
    

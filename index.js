@@ -54,7 +54,7 @@ for(let i=0;i<pp.length;i++){
           clearTimeout(timer);
       }
       localStorage.setItem('tex',JSON.stringify(inp.value));
-      function butto(){
+      function butto(e){
          if(inp.value !=""){
          
           e.preventDefault()

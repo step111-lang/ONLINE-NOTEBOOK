@@ -53,8 +53,8 @@ for(let i=0;i<pp.length;i++){
       function fig(){
           clearTimeout(timer);
       }
-      localStorage.setItem('tex',JSON.stringify(inp.value));
-      function butto(e){
+      
+      butto.addEventListener("click",(e)=>{
          if(inp.value !=""){
          
           e.preventDefault()
@@ -68,7 +68,7 @@ for(let i=0;i<pp.length;i++){
          spa.setAttribute("class","delit");
         spa.textContent="DELETE";
         mql.appendChild(spa);
-        JSON.parse(localStorage.getItem('tex'));
+        
          }
         
         var spas=document.getElementsByTagName("span")
@@ -95,5 +95,5 @@ for(let i=0;i<pp.length;i++){
         
         inp.value=""
         
-      }
+      });
    

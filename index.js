@@ -1,4 +1,4 @@
- const diz=document.querySelector(".displ");
+const diz=document.querySelector(".displ");
 const bodyp=document.querySelector(".bodyp");
   const menubtn=document.querySelector(".menubtn");
    const header=document.querySelector(".header");
@@ -53,8 +53,8 @@ for(let i=0;i<pp.length;i++){
       function fig(){
           clearTimeout(timer);
       }
-      
-      butto.addEventListener("click",(e)=>{
+      localStorage.setItem('tex',JSON.stringify(inp.value));
+      butto.addEventListener("click", (e) => {
          if(inp.value !=""){
          
           e.preventDefault()
@@ -68,7 +68,7 @@ for(let i=0;i<pp.length;i++){
          spa.setAttribute("class","delit");
         spa.textContent="DELETE";
         mql.appendChild(spa);
-        
+        JSON.parse(localStorage.getItem('tex'));
          }
         
         var spas=document.getElementsByTagName("span")

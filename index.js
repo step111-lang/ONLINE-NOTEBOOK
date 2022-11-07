@@ -19,6 +19,7 @@ for(let i=0;i<pp.length;i++){
     e.target.classList.add("tp"); 
     menu.classList.add("menump");
     arr.push(e.target.innerHTML);
+    e.target.innerHTML="";
       function gok(ari){
      let tem="";
     for(let j=0;j<ari.length;j++){
@@ -26,6 +27,8 @@ for(let i=0;i<pp.length;i++){
     }
       return tem;
 }
+     
+
       document.querySelector(".displ").innerHTML=`${gok(arr)}`;
      for(let k=0;k<pass.length;k++){
       if(pass[k]==diz.innerHTML){ 

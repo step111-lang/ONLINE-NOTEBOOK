@@ -13,7 +13,7 @@ var not=document.getElementById("not")
       var ni=document.getElementsByTagName("li")
       let g=0
 var arr=[];
-var pass=[1101011110100011];
+var pass=[11010111101000];
 for(let i=0;i<pp.length;i++){
     pp[i].addEventListener("click",(e)=>{
     e.target.classList.add("tp"); 

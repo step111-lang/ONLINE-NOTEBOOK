@@ -165,7 +165,7 @@ width:60px;
 background:green;
 border-radius:50%;
 border:none;
-color:green;
+color:lightgreen;
 }
 .tp:after{
 content:"";
@@ -182,7 +182,7 @@ box-shadow:inset -3px -3px 7px #ffffff73,inset 3px 5px 7px rgba(20,20,20,0.7);
 transform: translate(-50%,-50%);
 left:50%;
 top:50%;
-color:green;
+color:lightgreen;
 }
 .menum .dis{
 position: relative;
